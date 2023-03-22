@@ -1,14 +1,13 @@
-from transformers import GPT2LMHeadModel,  GPT2Tokenizer, GPT2Config
+from transformers import GPT2LMHeadModel,  GPT2Tokenizer
 import torch
 import json
 
 class GPT2_Chatbot():
     def __init__(self):
         # Initialize the tokenizer, model configuration and model using the GPT2 pre-trained model from Hugging Face Transformers
-        self.tokenizer = GPT2Tokenizer.from_pretrained("gpt2") 
-        self.model_config = GPT2Config.from_pretrained("gpt2", output_hidden_states=False)
-        self.model = GPT2LMHeadModel.from_pretrained("gpt2", config=self.model_config)
-        self.generate_config = json.load(open("config.json"))
+        self.tokenizer = GPT2Tokenizer.from_pretrained("./gpt2_model") 
+        self.model = GPT2LMHeadModel.from_pretrained("./gpt2_model", config="model_config.json")
+        self.generate_config = json.load(open("generation_config.json"))
 
     def get_starting_prompt(self, name):
         # Define the starting prompt for the conversation

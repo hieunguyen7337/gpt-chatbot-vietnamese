@@ -1,12 +1,11 @@
 from flask import Flask, request
-from transformers import GPT2LMHeadModel,  GPT2Tokenizer, GPT2Config
+from transformers import GPT2LMHeadModel,  GPT2Tokenizer
 import torch
 import json
 
-tokenizer = GPT2Tokenizer.from_pretrained("gpt2") 
-model_config = GPT2Config.from_pretrained("gpt2", output_hidden_states=False)
-model = GPT2LMHeadModel.from_pretrained("gpt2", config=model_config)
-generate_config = json.load(open("config.json"))
+tokenizer = GPT2Tokenizer.from_pretrained("./gpt2_model") 
+model = GPT2LMHeadModel.from_pretrained("./gpt2_model", config="model_config.json")
+generate_config = json.load(open("generation_config.json"))
 app = Flask(__name__)
 
 @app.route('/generate', methods=['POST'])
