@@ -1,0 +1,5 @@
+{
+    "max_generation_length":25,
+    "top_k":25,
+    "top_p":0.95
+}
