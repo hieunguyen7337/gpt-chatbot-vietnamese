@@ -8,9 +8,9 @@ This is a Python program that creates a chatbot using the Huggingface GPT2 model
 ## Installation 
 Installation will depend on your hardware, here I'm using Python 3.9.16 and cuda 11.6.
 
-`pip install torch --extra-index-url https://download.pytorch.org/whl/cu116`
-
 `pip install -r requirements.txt`
+
+Download model weight file from link https://drive.google.com/file/d/1PUY2VWWnTnkdoieC7H9bXQt0n9vpPOEH/view?usp=sharing then put the file in the gpt2_model directory
 
 ## Usage
 You can run the chatbot offline with running `chatbot-offline.py` file. Alternatively, you can start a GPT-2 Flask API with running `gpt2-API.py` and using the API with running `chatbot-readAPI.py`.
