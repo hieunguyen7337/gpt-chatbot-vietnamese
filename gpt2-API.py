@@ -4,7 +4,7 @@ import torch
 import json
 
 tokenizer = GPT2Tokenizer.from_pretrained("./gpt2_model") 
-model = GPT2LMHeadModel.from_pretrained("./gpt2_model", config="model_config.json")
+model = GPT2LMHeadModel.from_pretrained("./gpt2_model/gpt2_pytorch_model.bin", config="model_config.json")
 generate_config = json.load(open("generation_config.json"))
 app = Flask(__name__)
 
