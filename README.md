@@ -19,5 +19,12 @@ Once the chatbot is running, the user will be prompted to input their name. The 
 
 The user can input any text to start a conversation. The chatbot will respond to the user's input based on the context of the previous conversation. The conversation can be ended by typing "break" or restarted by typing "restart".
 
+## Configuration
+-	The chatbot use the pretrained GPT2-small model (117M parameters, 535MB model file), you can start the chatbot in terminal or start a Flask API with the model. The model is only the default pretrained so for it to act as a chatbot we preprompt the model in the form of  “User: …  Chatbot: …”.
+
+-	The config file “model_config.json” contain the default config of the gpt2 model itself and is unchanged from the default value provided by huggingface. 
+
+-	Another config file “generation_config.json” is the config file for the model generation process and contain 3 value top_p, top_k and max generation length.
+
 ## Credits
 This code uses the GPT2 model from Hugging Face Transformers library, which is an open-source library for NLP models. It also uses PyTorch, a machine learning library.
