@@ -6,7 +6,7 @@ class GPT2_Chatbot():
     def __init__(self):
         # Initialize the tokenizer, model configuration and model using the GPT2 pre-trained model from Hugging Face Transformers
         self.tokenizer = GPT2Tokenizer.from_pretrained("./gpt2_model") 
-        self.model = GPT2LMHeadModel.from_pretrained("./gpt2_model/gpt2_pytorch_model.bin", config="model_config.json")
+        self.model = GPT2LMHeadModel.from_pretrained("./gpt2_model")
         self.generate_config = json.load(open("generation_config.json"))
 
     def get_starting_prompt(self, name):
