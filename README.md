@@ -14,10 +14,10 @@ Installation will depend on your hardware, here I'm using Python 3.9.16 and cuda
 
 to download the model file run the following command
 
-`!wget -P ./gptj6B_VI_model https://huggingface.co/VietAI/gpt-j-6B-vietnamese-news/resolve/main/pytorch_model.bin`
+`wget -P ./gptj6B_VI_model https://huggingface.co/VietAI/gpt-j-6B-vietnamese-news/resolve/main/pytorch_model.bin`
 
 ## Usage
-You can run the chatbot offline in terminal with running the `chatbot-gpt-inference.py` file to run the GPT model. 
+You can run the chatbot offline in terminal with running the `chatbot-gpt-inference.py` file to run the GPT model. You can also finetune the model by runing the `training.py` file 
 
 The user can input any text to start a conversation. The chatbot will respond to the user's input based on the context of the previous conversation. The conversation can be ended by typing "break" or restarted by typing "restart".
 
