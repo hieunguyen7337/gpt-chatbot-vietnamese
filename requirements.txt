@@ -1,3 +1,8 @@
 transformers
 torch
-flask
+accelerate
+bitsandbytes
+datasets
+accelerate
+loralib
+git+https://github.com/huggingface/peft.git
