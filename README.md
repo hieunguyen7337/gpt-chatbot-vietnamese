@@ -1,6 +1,7 @@
 # GPT Chatbot
 ## Description 
-This is a Python program that creates a chatbot using the Huggingface GPT2 model. The chatbot is capable of responding to user input and continuing the conversation based on the context of the previous conversation.
+This is a Python program that creates a chatbot using the Huggingface GPTJ 6B
+ model. The chatbot is capable of responding to user input and continuing the conversation based on the context of the previous conversation.
 
 ## Requirements 
 - Python 3.9 and cuda 11.8
