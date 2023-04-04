@@ -16,8 +16,8 @@ class GPT_Chatbot():
     def model_generate_token(self, tokenized_text_input):
         generation_output = self.model.generate(tokenized_text_input,
                                                 do_sample=True,   
-                                                top_k=25, 
-                                                top_p=0.95,
+                                                top_k=self.generate_config.get("top_k"), 
+                                                top_p=self.generate_config.get("top_p"),
                                                 num_return_sequences=1, 
                                                 pad_token_id=self.tokenizer.eos_token_id,
                                                 max_length=len(tokenized_text_input[0]) + 1)
@@ -27,7 +27,7 @@ class GPT_Chatbot():
         print("Chatbot:",end="")
         input_ids = self.tokenize_text(input_text)
         # while(True):
-        for i in range(35):
+        for i in range(self.generate_config.get("max_generation_length")):
             model_output = self.model_generate_token(input_ids)
             if model_output[0][-1:] == 172:
                 break
