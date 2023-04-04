@@ -6,13 +6,13 @@ This is a Python program that creates a chatbot using the Huggingface GPT2 model
 - Python 3.9.16 and cuda 11.8
 
 ## Installation 
-Installation will depend on your hardware, here I'm using Python 3.9.16 and cuda 11.8
+Run the 2 command below for installation.
 
 `conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia`
 
 `pip install -r requirements.txt`
 
-to download the model file run the following command
+To download the model file run the following command
 
 `wget -P ./gptj6B_VI_model https://huggingface.co/VietAI/gpt-j-6B-vietnamese-news/resolve/main/pytorch_model.bin`
 
