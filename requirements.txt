@@ -1,8 +1,10 @@
-transformers
-torch
-accelerate
-bitsandbytes
-datasets
-accelerate
-loralib
+transformers=4.27.4
+torch=2.0.0+cu118
+accelerate=0.18.0
+bitsandbytes=0.37.2
+datasets=2.11.0
+accelerate=4.27.4
+loralib=0.1.1
 git+https://github.com/huggingface/peft.git
+
+
