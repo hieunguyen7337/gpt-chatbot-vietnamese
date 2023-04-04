@@ -3,7 +3,7 @@
 This is a Python program that creates a chatbot using the Huggingface GPT2 model. The chatbot is capable of responding to user input and continuing the conversation based on the context of the previous conversation.
 
 ## Requirements 
-- Python 3.9.16
+- Python 3.9.16 and cuda 11.8
 
 ## Installation 
 Installation will depend on your hardware, here I'm using Python 3.9.16 and cuda 11.8
