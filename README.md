@@ -6,7 +6,9 @@ This is a Python program that creates a chatbot using the Huggingface GPT2 model
 - Python 3.6 or higher
 
 ## Installation 
-Installation will depend on your hardware, here I'm using Python 3.9.16 and cuda 11.6.
+Installation will depend on your hardware, here I'm using Python 3.9.16 and cuda 11.8
+
+`conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia`
 
 `pip install -r requirements.txt`
 
