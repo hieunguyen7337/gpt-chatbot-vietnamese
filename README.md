@@ -1,4 +1,4 @@
-# GPT2 Chatbot
+# GPT Chatbot
 ## Description 
 This is a Python program that creates a chatbot using the Huggingface GPT2 model. The chatbot is capable of responding to user input and continuing the conversation based on the context of the previous conversation.
 
